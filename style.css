@@ -1,63 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wix+Madefor+Text&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wix+Madefor+Text&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0b0423;
 }
 
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left,
+#right {
+  width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  border: 2px dashed white;
+}
+
+.list {
+  background: #b53ae6;
+  height: 60px;
+  margin: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  cursor: grab;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+.list img {
+  width: 30px;
+  margin-right: 15px;
+  margin-left: 60px;
+}
+
+#para {
+  background: #0b0423;
+  color: #0b0423;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: x-large;
+}
+
+#btn {
+  background: #0b3363;
+  color: white;
+  width: 120px;
+  height: 2rem;
+  margin-left: 615px;
+
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: larger;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* for mobile  */
+@media screen and (max-width: 480px){
 .container{
-    width: 100%;
-    min-height: 100vh;
-    background: #0b0423;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: red;
 }
-
-#left, #right{
- width: 300px;
- min-height: 400px;
- margin: 20px;
- border: 2px dashed white;
-}
-
-.list{
-    background: #b53ae6;
-    height: 60px;
-    margin: 30px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    cursor: grab;
-    font-family: 'Wix Madefor Text', sans-serif;
-}
-
-.list img{
-    width: 30px;
-    margin-right: 15px;
-    margin-left: 60px;
-}
-
-#para{
-    background: #0b0423;
-    color: #0b0423;
-    display: flex;
-    padding-top: 50px;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: x-large;
-    
-}
-#btn{
+#right {
+    width: 170px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed white;
+  }
+  #left {
+    width: 170px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed white;
+  }
+  #btn {
     background: #0b3363;
     color: white;
     width: 120px;
     height: 2rem;
     border-radius: 25px;
     cursor: pointer;
-    float: left;
     font-size: larger;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+  }
 }
