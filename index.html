@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div><p id="para">Item is added</p></div>
+
+    <div class="container">
+      <div id="left">
+        <div class="list" draggable="true" ondragend="changer(event)">
+          <img src="/images/cow.png" alt="icon" />Cow
+        </div>
+        <div class="list" draggable="true" ondragend="changer(event)">
+          <img src="/images/fox.png" alt="icon" />Fox
+        </div>
+        <div class="list" draggable="true" ondragend="changer(event)">
+          <img src="/images/koala.png" alt="icon" />Koala
+        </div>
+        <div class="list" draggable="true" ondragend="changer(event)">
+          <img src="/images/turtle.png" alt="icon" />Turtle
+        </div>
+      </div>
+      <div id="right"></div>
+      <button id="btn" onclick="reset()">RESET</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
