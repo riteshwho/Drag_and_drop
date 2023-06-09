@@ -67,29 +67,23 @@
 
 /* for mobile  */
 @media screen and (max-width: 480px){
-.container{
-    background: red;
-}
+#left,
 #right {
-    width: 170px;
-    min-height: 400px;
-    margin: 20px;
-    border: 2px dashed white;
+  width: 160px;
+}
+
+#btn{
+    margin-left: 150px;
+}
+.list img {
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
-  #left {
-    width: 170px;
-    min-height: 400px;
-    margin: 20px;
-    border: 2px dashed white;
-  }
-  #btn {
-    background: #0b3363;
-    color: white;
-    width: 120px;
-    height: 2rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: larger;
-    font-family: "Bebas Neue", sans-serif;
-  }
+}
+
+@media screen and (max-width: 820px){
+    #btn{
+        margin-left: 345px;
+    }
 }
