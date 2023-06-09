@@ -57,12 +57,16 @@
   color: white;
   width: 120px;
   height: 2rem;
-  margin-left: 615px;
-
   border-radius: 25px;
   cursor: pointer;
   font-size: larger;
   font-family: "Bebas Neue", sans-serif;
+}
+.btn-bg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* for mobile  */
@@ -72,18 +76,24 @@
   width: 160px;
 }
 
-#btn{
-    margin-left: 150px;
-}
 .list img {
     width: 30px;
     margin-right: 5px;
     margin-left: 5px;
   }
+  .btn-bg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 @media screen and (max-width: 820px){
-    #btn{
-        margin-left: 345px;
+    .btn-bg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
